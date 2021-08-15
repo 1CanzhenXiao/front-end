@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签input中type属性(3)</title>
+</head>
+<body>
+    <form>
+        <!-- input还有一个属性value，用于设置初始值 -->
+        账号：<input type="text" name="zhanghao" value="1000000" maxlength="9"/><br/>
+        密码：<input type="password" name="mima"/><br/>
+        <!-- 想要实现单选按钮多选1的功能，得给所有单选框命名相同名字（input标签的属性name）-->
+        <!-- checked属性可设置选项默认勾选的状态 -->
+        性别：男<input type="radio" name="sex" checked/> 女<input type="radio" name="sex"/><br/>
+        <!-- 多选框（可以多选） -->
+        hhh: A<input type="checkbox"> B<input type="checkbox">
+    </form>
+</body>
+</html> 
