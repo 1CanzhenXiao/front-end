@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <!-- 注意，链接伪类选择器书写顺序不能改变，以LVHA -->
+    <!-- 在实际开发中，会直接定义a -->
+    <style>
+        /* link修改链接样式 */
+        a:link{
+            color: #000;
+            text-decoration: none;
+        }
+        /* visited用于定义点击完的链接的样式 */
+        a:visited{
+            color: red;
+        }
+        /* hover用于定义当你鼠标放于链接上的链接样式 */
+        a:hover{
+            color: darkorange;
+        }
+        /* active用于定义点击时链接的样式 */
+        a:active{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">WASSUP</a>
+</body>
+</html>
