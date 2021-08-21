@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子边框</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-width: 3px;
+        }
+        .a{
+            border-style: dashed;
+        }
+        .b{
+            border-style: dotted;
+        }
+        .c{
+            border-style: groove;
+        }
+        .d{
+            border-style: hidden;
+        }
+        .e{
+            border-style: inset;
+        }
+        .f{
+            border-style: outset;
+        }
+        .g{
+            border-style: solid;
+        }
+        .h{
+            border-style: ridge;
+        }
+        /* 连写不讲顺序，只要有边框颜色，样式，粗细即可 */
+        .h{
+            border: 12px ridge skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子边框会加上原始盒子宽度，也就是边框是边框，盒子是盒子 -->
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+    <div class="h"></div>
+</body>
+</html>

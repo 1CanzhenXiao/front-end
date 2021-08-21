@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+        body{
+            color: darkorange;
+        }
+        #ASAS{
+            color: red;
+        }
+        p{
+            color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS优先级顺序由轻到重依次为：继承或*  元素选择器（标签选择器）  类或伪类选择器（class）  id选择器  行内样式style=“”  |important -->
+    <div class="ASAS">
+        <!-- 虽说style中先定义了div的样式，且优先级大，但在这里p包含于div，继承关系一文不值 -->
+        <p>ASSAASASSASAS</p>
+    </div>
+    <!-- 原因是链接标签默认定义了下划线蓝色的样式 -->
+    <a href="#">虽说看起来没有定义样式会继承body样式 但毫无交集</a>
+</body>
+</html>
