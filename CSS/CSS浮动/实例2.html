@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实例2</title>
+    <style>
+        .bigbox{
+            height: 615px;
+            width: 1226px;
+            margin: 0px auto;
+            background-color: rgb(221, 215, 215);
+        }
+        .left{
+            width: 234px;
+            height: 615px;
+            background-color: rgb(240, 238, 238);
+            float: left;
+        }
+        .left:hover{
+            box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, .4);
+        }
+        /* .right{
+            float: left;
+            width: 992px;
+            height: 615px;
+            background-color: skyblue;
+        } */
+        .right>div{
+            float: left;
+            width: 234px;
+            height: 300px;
+            margin-bottom: 14px;
+            margin-left: 14px;
+            background-color: rgb(240, 238, 238);
+        }
+        .right>div:hover{
+            box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, .4);
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="left"></div>
+        <div class="right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+</body>
+</html>

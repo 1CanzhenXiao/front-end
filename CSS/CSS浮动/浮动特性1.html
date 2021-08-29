@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动特性1</title>
+    <style>
+        /* 脱标，当盒子浮动时，相当于盒子起飞了，两个盒子处于不同高度，未浮动的盒子会脱离原来的位置 */
+        .F{
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .S{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="F"></div>
+    <div class="S"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动(1)</title>
+    <style>
+        /* 额外标签法（隔墙法），W3C推荐方法，自动识别并扩大父盒子 */
+        .box{
+            width: 832px;
+            border: royalblue 3px solid;
+        }
+        .box>.a{
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin-right: 8px;
+        }
+        .last{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 缺点是添加了太多无意义的标签，且最后一个标签必须为块级标签 -->
+    <div class="box">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="last"></div>
+    </div>
+</body>
+</html>

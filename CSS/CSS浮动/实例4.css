@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 1510px;
+}
+.top{
+    width: 1200px;
+    height: 161px;
+    background-color: white;
+    margin: 0px auto;
+}
+.h1,.h2{
+    margin-top: 40px;
+    float: left;
+}
+.h21{
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.h22{
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+/* 按钮及查询框 */
+.h3{
+    margin-top: 60px;
+    float: right;
+}
+.h31{
+    outline: none;
+    border: 2px rgb(103, 193, 196) solid;
+    height: 40px; 
+    border-radius: 30px;
+    padding-left: 20px;
+}
+.h32:hover{
+    background-color: rgb(90, 176, 179);
+}
+.h32{
+    outline: none;
+    background-color: rgb(103,193,196);
+    height: 40px; width: 60px;
+    border: none; border-radius: 25px;
+    color: white; font-weight: 700;
+}
+.topf{
+    background-color: rgb(103, 193, 196);
+    height: 80px;
+}
+.topf a{
+    height: 77px;
+    background-color: rgb(103, 193, 196);
+    display: block;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    text-decoration: none;
+    font-weight: 700;
+    float: left;
+    margin-left: 100px;
+}
+.topf a:hover{
+    border-bottom: aliceblue 3px solid;
+}
+.topf>.first1{
+    margin-left: 180px;
+}
+.head{
+    margin: 0px auto;
+    height: 600px;
+    background-image: url(素材/banner.jpg);
+    position: relative;
+}
+.left{
+    float:left
+}
+.left>a{
+    display: block;
+    text-decoration: none;
+    height: 66.5px; width: 300px;
+    line-height: 66.5px; color: white; font-size: 18px; text-align: center;
+    background-color: rgba(0, 0, 0, 0.479);
+    float:inline-end;
+}
+.left>a:hover{
+    background-color: rgba(0, 0, 0, 0.589);
+    color: rgb(136, 218, 250);
+}
+.right{
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 300px;
+    float: right;
+    border-collapse: collapse;
+}
+.right>a{
+    display: block;
+    text-decoration: none;
+    height: 66.5px;
+    line-height: 66.5px; color: #000; font-size: 18px; text-align: center;
+    font-weight: 700;
+    border: 1px gray solid;
+}
+.right>.rightf{
+    background-color: rgb(133, 207, 236);
+    color: white;
+    font-weight: 700; font-size: 25px;
+    border: none;
+}
+.right>a:hover{
+    background-color: rgba(255, 255, 255, 0.555);
+}
+.right>.rightf:hover{
+    background-color: rgba(9, 180, 248, 0.452);
+}
+.middle{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 700px;
+}
+.head .span1{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8px;
+}
+.head .span2{
+    font-weight: 500;
+    color: white;
+    letter-spacing: 5px;
+    margin-left: 250px;
+}
+.how span{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.how{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.button input{
+    outline: none; border: none;
+    width: 140px; height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(9, 194, 169);
+    border-radius: 35px;
+    margin-left: 60px;
+}
+.button input:hover{
+    background-color: rgba(255, 255, 255, 0);
+    width: 140px; height: 50px;
+    color: rgb(9, 194, 169);
+    border: 3px solid rgb(9, 194, 169);
+}
+.button{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.body{
+    width: 1200px;
+    height: 850px;
+    margin: 0px auto;
+}
+.body>div{
+    float: left;
+    height: 450px; width: 270px;
+    border: 1px rgb(240, 240, 240) solid;
+    margin-right: 36px;
+}
+.body>.img{
+    width: 1200px;
+    height: 300px;
+    margin: 0px auto;
+    border: none;
+}
+.body>.img>img{
+    margin-top: 50px;
+    margin-left: 350px;
+}
+.i1,
+.i2,
+.i3,
+.i4{
+    width: 100%;
+}
+.d{
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 25px;
+    font-weight: 700;
+}
+.d1{
+    text-align: center;
+    font-weight: 700;
+    color: rgb(9, 194, 169);
+}
+li{
+    margin-left: 60px;
+    color: rgb(139, 138, 138);
+    font-size: 13px;margin-top: 10px;
+}
+.go{
+    outline: none;
+    border: none;
+    margin-top: 30px; margin-left: 70px;
+    width: 130px; height: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(9, 194, 169);
+    border-radius: 30px;
+}
+.go:hover {
+    background-color: white;
+    width: 130px; height: 40px;
+    color: rgb(9, 194, 169);
+    border: 3px solid rgb(9, 194, 169);
+}

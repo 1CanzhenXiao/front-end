@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        .top,.down{
+            width: 200px;
+            height: 200px;
+        }
+        .top{
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .down{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 相对定位是基于原来位置进行定位，在移动后不会出现浮动脱标，原先位置不会被占有 -->
+    <div class="top"></div>
+    <div class="down"></div>
+</body>
+</html>
