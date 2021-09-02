@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例1</title>
+    <style>
+        .bigbox{
+            width: 600px;
+            height: 400px;
+            position: relative;
+            top: 20px;
+            left: 50%;
+            margin-left: -300px;
+        }
+        .bigbox img{
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            width: 30px;
+            height: 40px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            color: white;
+            text-align: center; line-height: 40px;
+            font-weight: 700; font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.356);
+            position: absolute;
+            top: 50%; margin-top: -20px;
+        }
+        .right{
+            width: 30px;
+            height: 40px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            color: white;
+            text-align: center; line-height: 40px;
+            font-weight: 700; font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.356);
+            position: absolute;
+            top: 50%; margin-top: -20px; right: 0px;
+        }
+        .left:hover,
+        .right:hover{
+            background-color: rgba(0, 0, 0, 0.61);
+            color: rgba(252, 252, 252, 0.473);
+        }
+        .down{
+            width:100px;
+            height: 20px;
+            background-color: rgba(0, 0, 0, 0.356);
+            border-radius: 10px;
+            position: absolute;
+            bottom: 10px; left: 50%; margin-left:-50px;
+        }
+        .a{
+            background-color: #fff;
+            width: 10px; height: 10px;
+            border-radius: 7.5px;
+            float: left;
+            margin: 5px 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <img src="素材/banner.jpg">
+        <div class="left"><</div>
+        <div class="right">></div>
+        <div class="down">
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+            <div class="a"></div>
+        </div>
+    </div>
+</body>
+</html>

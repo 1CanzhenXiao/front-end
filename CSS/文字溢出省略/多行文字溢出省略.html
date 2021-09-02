@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多行文字溢出省略</title>
+    <style>
+        div{
+            margin: 20px auto;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(170, 169, 169);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性盒子，通常在移动端使用 */
+            display: -webkit-box;
+            /* 限制块元素显示的文本行数 */
+            -webkit-line-clamp: 5;
+            /* 盒子朝向（子元素排列方式） */
+            -webkit-box-orient: vertical; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我的文档无多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多
+    </div>
+</body>
+</html>

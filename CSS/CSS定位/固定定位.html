@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位</title>
+    <style>
+        .short{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            position: fixed;
+            top: 200px;
+            right: 200px;
+        }
+        .long{
+            width: 10px;
+            height: 2000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 将元素块以浏览器为基础 固定于某个位置不动 即使滚动页面也不动 -->
+    <div class="short"></div>
+    <div class="long"></div>
+</body>
+</html>

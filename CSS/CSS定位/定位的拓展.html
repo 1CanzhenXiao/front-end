@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的拓展</title>
+    <style>
+        .f{
+            position: relative;
+            background-color: gray;
+            height: 200px;
+            width: 290px;
+        }
+        .s{
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- 当给行内元素设置绝对和固定定位布局时，可为其设置长和宽 -->
+    <!-- 当给块级元素设置布局时不设置长和宽则会默认大小 -->
+    <!-- 浮动不会遮挡文字，定位会 -->
+    <span class="f">AAAAAAAAAAAAAA</span>
+    <div class="s">sadasd</div>
+</body>
+</html>

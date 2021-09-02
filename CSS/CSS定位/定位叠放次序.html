@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位叠放次序</title>
+    <style>
+        .r{
+            height: 200px;
+            width: 200px;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        .red{
+            background-color: rgba(255, 0, 0, 0.596);
+            z-index: 999;
+        }
+        .blue{
+            background-color: rgba(0, 0, 255, 0.329);
+            top: 50px;
+            left: 50px;
+        }
+        .green{
+            background-color: rgba(0, 128, 0, 0.329);
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    z-index可以定义盒子叠放次序
+    <!-- 数值后不能加单位 -->
+    <div class="red r"></div>
+    <div class="blue r"></div>
+    <div class="green r"></div>
+</body>
+</html>
