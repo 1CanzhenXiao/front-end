@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"> 盒子1 </div>
+    <div class="box"> 盒子2 </div>
+    <ol id="lis">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</body>
+<script>
+    //getElementsByClassName(), 根据类名获得元素的集合
+    let b1 = document.getElementsByClassName("box");
+    //querySelector 返回指定选择器的第一个元素对象
+    let b2 = document.querySelector(".box");
+    //通过id选择器去找
+    let b3 = document.querySelector("#lis");
+    //querySelectorAll返回符合的所有元素
+    let b4 = document.querySelectorAll(".box");
+
+    console.log(b1);
+    console.log(b2);
+    console.log(b3);
+    console.log(b4);
+</script>
+</html>

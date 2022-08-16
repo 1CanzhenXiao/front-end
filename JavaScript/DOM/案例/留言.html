@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            line-height: 45px;
+            text-align: center;
+            margin: 0;
+            height: 50px;
+            width: auto;
+            font-size: large;
+            font-weight: 800;
+            background-color: rgb(181, 181, 181);
+        }
+    </style>
+</head>
+<body>
+    <textarea cols="30" rows="10" style="resize: none"></textarea>
+    <button class="submit">提交</button>
+
+    <ul style="list-style: none;">
+        <li>
+            <div>哈哈，置顶</div>
+        </li>
+    </ul>
+</body>
+<script>
+    let button = document.querySelector(".submit");
+    button.onclick = function(){
+        let text = document.querySelector("textarea");
+        if(text.value!==""){
+            let newli = document.createElement("li");
+            let newdiv = document.createElement("div");
+            newdiv.innerHTML = text.value + "<a src=''>#</a>";
+            newli.appendChild(newdiv);
+            let ul = document.querySelector("ul");
+            ul.lastElementChild.appendChild(newli);
+        }
+    }
+</script>
+</html>

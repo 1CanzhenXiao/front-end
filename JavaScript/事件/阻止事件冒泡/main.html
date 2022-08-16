@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(45, 43, 43);
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(124, 122, 122);
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>事件冒泡，开始由具体的元素接收，然后向上传播到DOM最顶层的节点</p>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+<script>
+    let father = document.querySelector('.father');
+    let son = document.querySelector('.son');
+    father.addEventListener('click', function(e){
+        alert('father');
+    });
+    son.addEventListener('click', function(e){
+        alert('son');
+        //阻止冒泡
+        e.stopPropagation();
+    });
+</script>
+</html>

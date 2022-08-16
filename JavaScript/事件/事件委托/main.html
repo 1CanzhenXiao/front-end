@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        事件委托是利用冒泡原理，不给每个节点单独设置事件监听器，而是给父元素设置监听器
+        可以利用e.target得到触发事件的对象再来操作。
+    </p>
+    <ul>
+        <li>ABC</li>
+        <li>BCA</li>
+        <li>JLJA</li>
+        <li>ASLQ</li>
+        <li>LKJQ</li>
+    </ul>
+</body>
+<script>
+    let ul = document.querySelector('ul');
+    ul.addEventListener('click',function(e){
+        e.target.style.backgroundColor = 'green';
+        alert(e.target.innerText);
+    });
+</script>
+</html>

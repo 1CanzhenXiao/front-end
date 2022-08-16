@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <button type="submit">提交</button>
+</body>
+<script>
+    //node.cloneNode()
+    let ul = document.querySelector('ul');
+    let btn = document.querySelector('button');
+    btn.onclick = function(){
+        //可以在cloneBode方法中添加boolean值，true意为深拷贝
+        let temp = ul.children[0].cloneNode();
+        ul.appendChild(temp);
+    }
+</script>
+</html>

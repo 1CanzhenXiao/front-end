@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转换为数字型</title>
+</head>
+<body>
+    <script>
+        //parseInt(String) parseFloat(String) Number(String) 隐式转换（-*/）
+        var string = "1212121.212";
+        var str = "sdasda11111";
+        var num1 = parseInt(string);
+        var num2 = parseFloat(string);
+        var num3 = Number(string);
+        var num4 = string * 1;
+        //当字符串里的非数字型不能组成某种计量单位时，会输出NAN
+        console.log(typeof num1);
+        console.log(typeof num2);
+        console.log(typeof num3);
+        console.log(typeof num4);
+        console.log(parseInt(str));
+    </script>
+</body>
+</html>

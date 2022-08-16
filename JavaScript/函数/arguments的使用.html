@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arguments的使用</title>
+</head>
+<body>
+    <script>
+        //当不确定用户传递多少参数时用arguments获取，arguments存储了所有实参，arguments返回伪数组
+        function a(){
+            console.log(arguments);
+            console.log(arguments.length);
+            console.log(arguments[3]);
+        }
+        a(1,1,1,1,13,4);
+        //伪数组没有数组的一些特性
+    </script>
+</body>
+</html>

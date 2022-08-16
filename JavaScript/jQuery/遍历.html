@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <script>
+        $(function(){
+            //两种方式：
+            //一种是：$('对象').each(function(i（下标）, 随便取的遍历对象名){})
+            //另外一种是 $.each(object, function(i（下标）, 随便取的遍历对象){})
+            $('div').each(function(i, Eldom){
+                console.log(Eldom);
+                $(Eldom).css("backgroundColor", "red");
+            })
+            $.each($('div'), function(i, Eldom){
+                console.log(Eldom);
+            })
+        })
+    </script>
+</body>
+</html>

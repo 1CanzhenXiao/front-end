@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数形参和实参个数不匹配问题</title>
+</head>
+<body>
+    <script>
+        function a(num1,num2){
+            console.log(num1+num2);
+        }
+        //若实参和形参匹配，则正常输出
+        a(1,50000);
+        //若实参多于形参,则默认计算前面两个
+        a(1,10,2,2,3);
+        //若实参小于形参,则输出NAN 1+undefined=NAN
+        a(1);
+    </script>
+</body>
+</html>

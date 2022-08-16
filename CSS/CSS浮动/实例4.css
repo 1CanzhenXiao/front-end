@@ -2,9 +2,6 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-    width: 1510px;
-}
 .top{
     width: 1200px;
     height: 161px;
@@ -51,17 +48,20 @@ body{
 }
 .topf{
     background-color: rgb(103, 193, 196);
-    height: 80px;
+    height: 85px;
 }
 .topf a{
-    height: 77px;
+    text-decoration: none;
+    line-height: 73px;
+    font-size: 20px;
+    color: white;
+    float: left;
+    font-weight: 700;
+}
+.topf li{
+    height: 75px;
     background-color: rgb(103, 193, 196);
     display: block;
-    color: white;
-    font-size: 20px;
-    line-height: 80px;
-    text-decoration: none;
-    font-weight: 700;
     float: left;
     margin-left: 100px;
 }
@@ -102,7 +102,7 @@ body{
     background-color: rgba(255, 255, 255, 0.747);
     width: 300px;
     border-collapse: collapse;
-    border-radius: 2px;
+    border-radius: 0px;
     /* 将元素位于整体最上层 */
     z-index: 999;
 }

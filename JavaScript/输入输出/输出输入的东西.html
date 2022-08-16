@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>输出输入的东西</title>
     <script>
-        var name = prompt("请输入名字");
-        alert(name);
+        var num = [1];
+        for(var i = 1; i<100; i++){
+            num[i] = num[i-1]+1;
+        }
+        document.write(num);
     </script>
 </head>
 <body>

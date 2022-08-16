@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<!--头部导航 navigation-->
+<div class="nav">
+    <img src="img/12.jpg">
+    <span class="title">我的博客系统</span>
+    <!--用来占据中间空白位置-->
+    <span class="spacer"></span>
+    <a href="index.html">主页</a>
+    <a href="editor.html">写博客</a>
+    <!--删除用户的登陆状态，需要动态处理-->
+    <a href="login.html">注销</a>
+</div>
+<!--正文部分-->
+<div class="login-container">
+    <div class="login-dialog">
+        <form action="index.html">
+            <h3>登录</h3>
+            <div class="row">
+                <span>用户名</span>
+                <input type="text" id="username">
+            </div>
+            <div class="row">
+                <span>密码</span>
+                <input type="password" id="password">
+            </div>
+            <div class="row">
+                <button id="submit">提交</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

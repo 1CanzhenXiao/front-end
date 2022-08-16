@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //当页面全部渲染完毕后再开始执行
+        //只能写一次，不然会覆盖
+        window.addEventListener('load', function(){
+            let btn = document.querySelector('button');
+            btn.addEventListener('click',function(){
+                alert('hhh');
+            });
+        });
+        //DOMContentLoaded，当DOM加载完毕就执行，不包括图片啥的，ie9以上使用，图片一多得等加载，用户体验不好
+        window.addEventListener('DOMContentLoaded', function(){
+            let btn = document.querySelector('button');
+            btn.addEventListener('click',function(){
+                alert('111');
+            })
+        });
+    </script>
+    <button>点击我</button>
+</body>
+</html>

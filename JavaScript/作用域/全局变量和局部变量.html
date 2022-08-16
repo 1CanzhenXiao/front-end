@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全局变量和局部变量</title>
+</head>
+<body>
+    <script>
+        var num_out = 10;   //全局变量
+        function a(){
+            num = 1011; //全局变量（函数内部直接声明，没有声明）
+            var num_in = 100;  //局部变量，于外面的num毫无关系
+        }
+        console.log(num_in)
+        //全局变量直到浏览器关闭才销毁
+    </script>
+</body>
+</html>

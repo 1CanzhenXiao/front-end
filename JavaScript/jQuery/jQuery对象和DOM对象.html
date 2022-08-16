@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <span></span>
+
+    <script>
+        //对象不同
+        let div1 = document.querySelector('div');
+        let span1 = document.querySelector('span');
+        console.log(div1);
+        console.log(span1);
+        console.log($('div'));
+        console.log($('sapn'));
+        div1.style.backgroundColor = 'blue';
+
+        //jquery对象和dom对象可以相互转换
+
+        //dom对象转换成jquery对象
+        $(div1); //将dom对象外层封装成jquery对象
+        //jquery转换成dom对象（jquery像是列表）
+        $('div')[0];
+        $('span').get(0);
+    </script>
+</body>
+</html>

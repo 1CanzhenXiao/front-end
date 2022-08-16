@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型转换</title>
+</head>
+<body>
+    <script>
+        //转换为字符串类型 .toString() String() 加号拼接字符串
+        var num = 10;
+        //.toString()
+        var str1 = num.toString();
+        // String()强转
+        var str2 = String(num);
+        //加法(隐式转换)
+        var str3 = num + "";
+        console.log(typeof str1);
+        console.log(typeof str2);
+        console.log(typeof str3);
+    </script>
+</body>
+</html>

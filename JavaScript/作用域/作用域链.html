@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作用域链</title>
+</head>
+<body>
+    <script>
+        //js中采取链式查找的方式，向上查找存在的变量，若在上级不存在，则再向上查找
+        var num2=20;
+        function a(){
+            var num2=10;
+            function b(){
+                console.log(num2);
+            }
+            b();
+        }
+        a();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //创建json对象
+        //与普通对象的区别是，key需要用双引号包括，而普通对象不用
+        var emp = {
+            "empno" : 1231,
+            "sname" : "XCZJustn",
+            "sal" : 213
+        }
+
+        //使用方式一
+        console.log(emp.empno);
+        console.log(emp.sal);
+        console.log(emp.sname);
+
+        // 第二种方式
+        console.log(emp["empno"]);
+        console.log(emp["sal"]);
+        console.log(emp["sname"]);
+    </script>
+</body>
+</html>

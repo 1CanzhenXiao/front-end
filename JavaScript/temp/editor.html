@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑页</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="editor.md/css/editormd.min.css">
+</head>
+<body>
+<!--头部导航 navigation-->
+<div class="nav">
+    <img src="img/12.jpg">
+    <span class="title">我的博客系统</span>
+    <!--用来占据中间空白位置-->
+    <span class="spacer"></span>
+    <a href="index.html">主页</a>
+    <a href="editor.html">写博客</a>
+    <!--删除用户的登陆状态，需要动态处理-->
+    <a href="login.html">注销</a>
+</div>
+<!--正文-->
+<div class="blog-editor-container">
+    <form action="article.html">
+        <div class="title">
+            <input type="text" placeholder="在此写下文章标题" id="title">
+            <button id="submit">发表文章</button>
+        </div>
+        <!-- 创建编辑器标签 -->
+        <div id="editor"></div>
+    </form>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="editor.md/lib/marked.min.js"></script>
+<script src="editor.md/lib/prettify.min.js"></script>
+<script src="editor.md/editormd.js"></script>
+
+<script>
+    // 初始化编辑器
+    var editor=editormd("editor",{
+        // 这里的尺寸必须在这里设置. 设置样式会被 editormd 自动覆盖掉.
+        width:'100%',
+        // 高度 100% 意思是和父元素一样高. 要在父元素的基础上去掉标题编辑区的高度
+        height:'calc(100% - 50px)',
+        // 编辑器中的初始内容
+        markdown:"#在这里写下一篇博客",
+        // 指定 editor.md 依赖的插件路径
+        path:'editor.md/lib/'
+        });
+</script>
+</body>
+</html>

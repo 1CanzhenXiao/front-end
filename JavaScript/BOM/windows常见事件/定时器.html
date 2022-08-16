@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>停止</button>
+    <script>
+        function fn(){
+            console.log('111');
+        }
+        //setTimeout('fn()', 2000);
+        //回调函数
+        let time = setTimeout(fn, 2000);
+
+        //停止定时器 clearTimeout()
+        let boom = setTimeout(function(){
+            alert("boom");
+        }, 3000);
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', function(){
+            clearTimeout(boom);
+        });
+    </script>
+</body>
+</html>

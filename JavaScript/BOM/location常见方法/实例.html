@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1">点击1</button>
+    <button class="btn2">点击2</button>
+    <button class="btn3">点击3</button>
+</body>
+<script>
+    let btn1 = document.querySelector('.btn1');
+    let btn2 = document.querySelector('.btn2');
+    let btn3 = document.querySelector('.btn3');
+    btn1.addEventListener('click', function(){
+        //assign跳转页面，可回退
+        location.assign('http://www.baidu.com');
+    });
+    btn2.addEventListener('click', function(){
+        //跳转页面，但不可回退
+        location.replace('http://www.baidu.com');
+    });
+    btn3.addEventListener('click', function(){
+        //相当于刷新页面
+        location.reload();
+    });
+</script>
+</html>
